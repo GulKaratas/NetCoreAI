@@ -1,4 +1,4 @@
-using NetCoreAl.Project01_ApiDemo.Context;
+﻿using NetCoreAl.Project01_ApiDemo.Context;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -6,21 +6,27 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddDbContext<ApiContext>();
 
 builder.Services.AddControllers();
-// Learn more about configuring OpenAPI at https://aka.ms/aspnet/openapi
+
+// 🔴 Swagger servisleri
+builder.Services.AddEndpointsApiExplorer();
+builder.Services.AddSwaggerGen();
+
+// (İstersen kalabilir ama şart değil)
 builder.Services.AddOpenApi();
 
 var app = builder.Build();
 
-// Configure the HTTP request pipeline.
+// 🔴 Swagger middleware
 if (app.Environment.IsDevelopment())
 {
-    app.MapOpenApi();
+    app.UseSwagger();
+    app.UseSwaggerUI();
+
+    app.MapOpenApi(); // opsiyonel
 }
 
 app.UseHttpsRedirection();
-
 app.UseAuthorization();
-
 app.MapControllers();
 
 app.Run();
