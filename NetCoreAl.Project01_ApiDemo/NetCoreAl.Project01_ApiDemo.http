@@ -1,0 +1,6 @@
+@NetCoreAl.Project01_ApiDemo_HostAddress = http://localhost:5258
+
+GET {{NetCoreAl.Project01_ApiDemo_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
