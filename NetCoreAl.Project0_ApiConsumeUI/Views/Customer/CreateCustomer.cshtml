@@ -1,0 +1,23 @@
+﻿@model NetCoreAl.Project02_ApiConsumeUI.Dtos.CreateCustomerDto
+
+@{
+    Layout = null;
+}
+
+<link href="~/lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
+<form method="post">
+    <div class="container">
+        <br /><br />
+        <label>Müşteri Adı</label>
+        <input  type="text" class="form-control" asp-for="CustomerName" />
+        <br />
+        <label>Müşteri Soyadı</label>
+        <input type="text" class="form-control" asp-for="CustomerSurname" />
+        <br />
+        <label>Müşteri Bakiye</label>
+        <input type="text" class="form-control" asp-for="CustomerBalance" />
+        <br />
+        <button class="btn btn-primary">Müşteri Oluştur</button>
+    </div>
+
+</form>
