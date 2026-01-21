@@ -4,5 +4,6 @@
   <Project Path="NetCoreAl.Project04_OpenAlChat/NetCoreAl.Project04_OpenAlChat.csproj" Id="445f27b1-7e24-4aed-9214-5076a152e73e" />
   <Project Path="NetCoreAl.Project05_OpenWhisperAudioTranskript/NetCoreAl.Project05_OpenWhisperAudioTranskript.csproj" Id="b39c7bbc-357c-4d45-9c8b-968cfdb2b1d9" />
   <Project Path="NetCoreAl.Project06_DallElmageGeneration/NetCoreAl.Project06_DallElmageGeneration.csproj" Id="5115d03f-5076-4361-bc87-cbc85265e285" />
+  <Project Path="NetCoreAl.Project07_TesseractOcr/NetCoreAl.Project07_TesseractOcr.csproj" Id="7d249082-f158-4473-8351-bc6bf007240a" />
   <Project Path="NetCoreAl.Project0_ApiConsumeUI/NetCoreAl.Project02_ApiConsumeUI.csproj" Id="dc847c98-977a-41e4-a901-7895d7d3a3cf" />
 </Solution>
